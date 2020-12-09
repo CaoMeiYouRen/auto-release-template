@@ -1,9 +1,11 @@
-name: Test
-on: [push, pull_request]
-
+name: Release
+on:
+  push:
+    branches:
+      - master
 jobs:
-  test:
-    name: Test
+  release:
+    name: Release
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -23,3 +25,7 @@ jobs:
       - run: yarn
       - run: npm run lint
       - run: npm run build
+    #   - env:
+    #       GH_TOKEN: ${{ secrets.GH_TOKEN }}
+    #       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+    #     run: npm run release
