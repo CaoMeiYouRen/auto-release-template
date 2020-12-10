@@ -25,6 +25,10 @@ jobs:
       - run: yarn
       - run: npm run lint
       - run: npm run build
+      - uses: ahmadnassri/action-dependabot-auto-merge@v2
+        with:
+          target: patch
+          github-token: ${{ github.token }}
     #   - env:
     #       GH_TOKEN: ${{ secrets.GH_TOKEN }}
     #       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
