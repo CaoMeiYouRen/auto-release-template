@@ -38,7 +38,7 @@
     "debug": "^4.3.4",
     "eslint": "^8.15.0",
     "eslint-config-cmyr": "^1.1.18",
-    "husky": "^7.0.4",
+    "husky": "^8.0.1",
     "lint-staged": "^12.4.1",
     "rimraf": "^3.0.2",
     "semantic-release": "^19.0.2",
